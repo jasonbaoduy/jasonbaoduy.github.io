@@ -1668,24 +1668,27 @@ input, select, textarea {
 }
 
 .pdf-container {
-  /* This ensures the container takes the full width available */
   width: 100%;
-  /* Optional: set a maximum width for desktop view */
   max-width: 700px;
-  /* Centers the container on the page (optional) */
   margin: 0 auto;
-  /* Adds padding to prevent it from touching the edges on mobile */
   padding: 0 15px;
 }
 
-.pdf-container iframe {
-  /* Make the iframe fill the container's width */
+.pdf-wrapper {
+  position: relative;
   width: 100%;
-  /* Define a height. You may need to adjust this value */
-  height: 500px;
-  /* Ensures it scales correctly */
-  display: block;
+  padding-top: 141.4%; /* A4 ratio */
 }
+
+.pdf-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 
 .video-container {
   width: 80%;
