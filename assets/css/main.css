@@ -1666,23 +1666,3 @@ input, select, textarea {
   display: block;  /* Helps with centering and layout issues */
   margin: 0 auto;  /* Optional: Centers the image if it's smaller than its container */
 }
-
-.pdf-container {
-  /* This ensures the container takes the full width available */
-  width: 100%;
-  /* Optional: set a maximum width for desktop view */
-  max-width: 800px;
-  /* Centers the container on the page (optional) */
-  margin: auto;
-  /* Adds padding to prevent it from touching the edges on mobile */
-  padding: 0 15px;
-}
-
-.pdf-container iframe {
-  /* Make the iframe fill the container's width */
-  width: 100%;
-  /* Define a height. You may need to adjust this value */
-  height: 600px;
-  /* Ensures it scales correctly */
-  display: block;
-}
