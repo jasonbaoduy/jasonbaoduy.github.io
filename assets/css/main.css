@@ -1687,27 +1687,25 @@ input, select, textarea {
   display: block;
 }
 
-video {
-  width: 100%;      /* Video will take the full width of its container */
-  height: auto;     /* Height adjusts automatically to maintain aspect ratio */
-  max-width: 100%;  /* Ensures video doesn't exceed its original size if container is larger */
-  display: block;   /* Helps with centering and layout control */
-  aspect-ratio: 16 / 9; /* Sets the preferred aspect ratio, e.g., 16:9 (optional but recommended) */
-}
-
 .video-container {
-  width: 80%; /* Default width for larger screens */
-  margin: 0 auto; /* Center on large screens */
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-/* Styles for screens smaller than 600px (typically mobile) */
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media screen and (max-width: 600px) {
   .video-container {
-    width: 100%; /* Full width on mobile screens */
-    padding: 10px; /* Add some padding on smaller screens */
-  }
-
-  video {
-    /* You can apply specific styles to the video itself here if needed */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
   }
 }
+
