@@ -1672,12 +1672,10 @@ input, select, textarea {
   width: 100%;
   /* Optional: set a maximum width for desktop view */
   max-width: 800px;
-  height: 600px;
   /* Centers the container on the page (optional) */
-  margin: 0 auto;
+  margin: auto;
   /* Adds padding to prevent it from touching the edges on mobile */
-  /* padding: 0 15px; */
-  display: block;
+  padding: 0 15px;
 }
 
 .pdf-container iframe {
