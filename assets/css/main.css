@@ -1671,7 +1671,6 @@ input, select, textarea {
   /* This ensures the container takes the full width available */
   width: 100%;
   /* Optional: set a maximum width for desktop view */
-  max-width: 800px;
   /* Centers the container on the page (optional) */
   margin: auto;
   /* Adds padding to prevent it from touching the edges on mobile */
